@@ -1,0 +1,82 @@
+* {
+  font-family: "Roboto Mono", monospace;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #fdb251;
+}
+
+.jumbotron {
+  background-color: lightblue;
+}
+
+/* .hover:hover {
+    border: 1px solid #fdb251;
+}
+ */
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #fdb251;
+}
+
+.form-control:focus {
+  border-color: #fdb251;
+  box-shadow: 0 0 0 0.2rem rgba(253, 178, 81, 0.25);
+}
+
+.hover {
+  transition: transform 0.2s;
+  /* Animation */
+}
+
+.hover:hover {
+  transform: scale(1);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  border: 3px solid #fdb251;
+}
+
+.footer > .navbar-brand {
+  font-size: 1rem;
+}
+
+.face:hover {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@media (min-width: 992px) {
+  .hover {
+    transition: transform 0.2s;
+    /* Animation */
+  }
+
+  .hover:hover {
+    transform: scale(1.1);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+}
