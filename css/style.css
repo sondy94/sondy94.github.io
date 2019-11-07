@@ -34,9 +34,16 @@
   border: 3px solid #fdb251;
 }
 
-.footer > .navbar-brand {
-  font-size: 1em;
+footer {
   text-align: center;
+  margin-top: 20px;
+  font-size: .7em;
+  font-weight: bold;
+  color: #000000;
+  opacity: .8;
+  background-color: #BDBDBD;
+  height: 130px;
+  padding-top: 60px; 
 }
 
 .face:hover {
